@@ -4,6 +4,10 @@
 
 
 
+------
+
+
+
 ## 依赖声明
 
 支持远程依赖项以快捷生成并即时更新依赖映射，换句话来说，我们可以通过定义一个键值来从 [Maven Central Repository](https://search.maven.org/), [Google Maven Repository](https://maven.google.com/web/index.html) 等储存库来找到所有匹配的依赖，并将它们映射为 Java 成员。这样的好处是不用再费时费力的输入各种各样的常见依赖，例如 *Android* 开发中常用的 **androidx**, **kotlin** 依赖，并且可以随时保持远端最新的依赖组，就像 **Apache** 组织新发布的项目依赖。
@@ -23,6 +27,10 @@
   > Gradle 的依赖都将使用此配置文件中的版本
 
 因为 **Gradle** 脚本结构并不适用于配置（储存依赖的动态版本），所以需要一个 **YAML** 配置文件来保存配置，但我认为这不是弊端，因为它们的侧重点不同，储存版本的地方应该尽可能的简洁。（~~也许有更好的方案~~）
+
+
+
+------
 
 
 
@@ -103,6 +111,10 @@ plugins:
 指的注意的是，如果 `libraries` 或 `plugins` 中出现了未在 `settings.gradle.kts / build.gradle.kts` 中声明的依赖，则需要根据 `mapped` 属性（如果没有声明此属性则通过[格式化器](mapping.zh.md/#格式化)）来自动生成 Java 映射成员，这与 [version catalogs](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) 的行为一致。
 
 > [幕后细节](version.zh.md)
+
+
+
+------
 
 
 
@@ -213,6 +225,10 @@ fun DependencyCentralDeclaration.addDefaultFormatter() {
 
 
 
+------
+
+
+
 ## 版本更新机器人
 
 检查新版本需要手动执行**版本刷新任务**来完成，为了更加方便，我们应该通过 Github Action 来定时完成，这与 [dependabot](https://dependabot.com/), [renovatebot](https://renovatebot.com/) 类似。
@@ -227,6 +243,10 @@ fun DependencyCentralDeclaration.addDefaultFormatter() {
 2. 编译并执行测试
     - 测试成功：将更新后的 **yml** 文件直接 `commit` 并 `push` 到主分支
     - 测试失败：创建一个 **issue**，并列出所有版本变更的依赖，并指向测试失败的 **Workflow** 日志
+
+
+
+------
 
 
 
