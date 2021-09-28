@@ -106,7 +106,7 @@ plugins:
 
 ## 工作流程
 
-##### Gradle Sync
+### Gradle Sync
 
 1. 当 **Gradle** 运行时，本项目插件将解析出所有配置依赖项（*`implementation`*, *`api`*...），并将未声明的依赖写入 [**yml** 配置文件](#配置文件定义) 中
 
@@ -122,7 +122,7 @@ plugins:
 
 ------
 
-##### 版本检查任务 `./gradlew checkVersions`
+### 版本检查任务 `./gradlew checkVersions`
 
 1. 将 [**yml** 配置文件](#配置文件定义) 序列化为 **Kotlin** 对象结构
 
@@ -136,7 +136,7 @@ plugins:
 
 ------
 
-##### 版本自动更新机器人（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)）
+### 版本自动更新机器人（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)）
 
 1. 定时或手动通过 [gradle-build-action](https://github.com/gradle/gradle-build-action) 运行 `checkVersions` 来更新 [**yml** 配置文件](#配置文件定义)
 
@@ -170,13 +170,13 @@ plugins:
 
 ------
 
-##### 版本自动更新机器人（[Dockfile 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-docker-container-action)）
+### 版本自动更新机器人（[Dockfile 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-docker-container-action)）
 
 使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#版本自动更新机器人（复合 Action 草案）) 的所有操作
 
 ------
 
-##### 版本自动更新机器人（[JavaScript 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-javascript-action)）
+### 版本自动更新机器人（[JavaScript 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-javascript-action)）
 
 使用 JS 语言来完成 [复合 Action](#版本自动更新机器人（复合 Action 草案）) 的所有操作
 
