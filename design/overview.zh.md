@@ -87,7 +87,7 @@ plugins:
 
 这些数据会在首次 Gradle 运行或手动执行**版本刷新任务** `./gradlew checkVersions ` 时自动生成或补充。
 
-指的注意的是，如果 `libraries` 或 `plugins` 中出现了尚未在 `settings.gradle.kts / build.gradle.kts` 中声明的依赖，则需要通过 [格式化器](mapping.zh.md/#格式化) 来自动生成 Java 映射成员，这与 [version catalogs](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) 的行为一致。
+指的注意的是，如果 `libraries` 或 `plugins` 中出现了尚未在 `settings.gradle.kts / build.gradle.kts` 中声明的依赖，则需要通过 [格式化器](mapping.zh.md#格式化) 来自动生成 Java 映射成员，这与 [version catalogs](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) 的行为一致。
 
 > [幕后设计细节](version.zh.md)
 
@@ -208,7 +208,7 @@ fun DependencyCentralDeclaration.addDefaultFormatter() {
 
 检查新版本需要手动执行**版本刷新任务**来完成，为了更加方便，我们应该通过 **Github Action** 来定时完成，这与 [dependabot](https://dependabot.com/), [renovatebot](https://renovatebot.com/) 类似。
 
-> [幕后设计细节](version.zh.md#版本自动更新机器人)
+> [幕后设计细节](version.zh.md#版本自动更新机器人组合运行步骤草案)
 
 ------
 
