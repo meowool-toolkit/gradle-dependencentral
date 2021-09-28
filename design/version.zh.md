@@ -1,7 +1,5 @@
 # 版本相关设计
 
-------
-
 ## 配置文件定义
 
 配置文件使用 **YAML** 语法来定义依赖、依赖版本、版本的更新选项，这很大程度上作为一个中心点，**Gradle** 每次运行时都从此文件中解析对应依赖的版本信息并使用。（配置结构一定程度上参考了 [Github Action](https://docs.github.com/cn/actions/learn-github-actions/introduction-to-github-actions)）
@@ -172,13 +170,13 @@ plugins:
 
 ### 版本自动更新机器人（[Dockfile 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-docker-container-action)）
 
-使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#版本自动更新机器人（复合 Action 草案）) 的所有操作
+使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#版本自动更新机器人组合运行步骤草案) 的所有操作
 
 ------
 
 ### 版本自动更新机器人（[JavaScript 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-javascript-action)）
 
-使用 JS 语言来完成 [复合 Action](#版本自动更新机器人（复合 Action 草案）) 的所有操作
+使用 JS 语言来完成 [复合 Action](#版本自动更新机器人组合运行步骤草案) 的所有操作
 
 ------
 
