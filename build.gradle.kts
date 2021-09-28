@@ -7,9 +7,9 @@ dependencies.implementationOf(
   Libs.Ktor.Client.Serialization,
   Libs.KotlinX.Serialization.Json,
   Libs.Square.OkHttp3.Logging.Interceptor,
+  Libs.Meowool.Gradle.Toolkit,
   Libs.ByteBuddy.Byte.Buddy,
   Libs.Andreinc.Mockneat,
-  Libs.Meowool.Gradle.Toolkit,
 )
 
 val packageName = "com.meowool.gradle.dependencentral"
