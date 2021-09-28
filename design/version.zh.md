@@ -64,15 +64,15 @@ plugins:
 
 - 在 `libraries` 和 `plugins` 中都提供了一些特定的可选属性来控制版本的检查行为，除此之外的所有属性都会被视作[依赖对象](#依赖对象)
 
-| 名称             | 描述                                              | 类型     | 示例                                                         | 默认值  |
-| ---------------- | ------------------------------------------------- | -------- | ------------------------------------------------------------ | ------- |
-| `rejectAll`      | 拒绝检查所有版本                                  | Boolean  | `rejectRelease: true`                                        | `false` |
-| `rejectRelease`  | 拒绝检查稳定版本                                  | Boolean  | `rejectRelease: true`                                        | `false` |
-| `rejectSnapshot` | 拒绝检查快照版本                                  | Boolean  | `rejectSnapshot: true`                                       | `true`  |
-| `rejectSuffix`   | 拒绝检查给定后缀（忽略大小写）的版本              | String   | `rejectSuffix: -RC` （排除版本后缀为 RC 的结果，例如 1.2.0-rc） | 无      |
-| `rejectKeyword`  | 拒绝检查包含给定关键字（忽略大小写）的版本        | String   | `rejectKeyword: test` （排除版本中包含 test 的结果，例如 0.5-TEST-SNAPSHOT） | 无      |
-| `limitVersons`   | 限制检测到的新版本的数量                          | Int      | `limitVersions: 3`（只保留最新的三个版本）                   | `10`    |
-| ...              | 未指定的属性，表示一个嵌套的[依赖对象](#依赖对象) | 复合对象 | `dependency:`<br />   `...`<br />   `...`                    | 无      |
+| 名称             | 描述                                              | 类型       | 示例                                                         | 默认值  |
+| ---------------- | ------------------------------------------------- | ---------- | ------------------------------------------------------------ | ------- |
+| `rejectAll`      | 拒绝检查所有版本                                  | Boolean    | `rejectRelease: true`                                        | `false` |
+| `rejectRelease`  | 拒绝检查稳定版本                                  | Boolean    | `rejectRelease: true`                                        | `false` |
+| `rejectSnapshot` | 拒绝检查快照版本                                  | Boolean    | `rejectSnapshot: true`                                       | `true`  |
+| `rejectSuffixes` | 拒绝检查给定后缀（忽略大小写）的版本              | 字符串数组 | `rejectSuffix: [-RC, -M]` （排除版本后缀为 RC 和 M 的结果，例如 1.2.0-rc, 1.0-M） | 无      |
+| `rejectKeywords` | 拒绝检查包含给定关键字（忽略大小写）的版本        | 字符串数组 | `rejectKeyword: [test]` （排除版本中包含 test 的结果，例如 0.5-TEST-SNAPSHOT） | 无      |
+| `limitVersons`   | 限制检测到的新版本的数量                          | Int        | `limitVersions: 3`（只保留最新的三个版本）                   | `10`    |
+| ...              | 未指定的属性，表示一个嵌套的[依赖对象](#依赖对象) | 复合对象   | `dependency:`<br />   `...`<br />   `...`                    | 无      |
 
 > 注意：所有特定属性都可以被[依赖对象](#依赖对象)继承
 >
