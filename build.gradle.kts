@@ -1,14 +1,5 @@
 plugins { `kotlin-dsl`; kotlin("plugin.serialization") version "1.5.31" }
 
-publication {
-  data {
-    artifactId = "toolkit-dependency-mapper"
-    displayName = "Dependency Mapper for Gradle Toolkit"
-    description = "Map all dependencies to classes and fields for easy calling in gradle scripts."
-  }
-  pluginClass = "${data.groupId}.toolkit.DependencyMapperPlugin"
-}
-
 dependencies.implementationOf(
   Libs.Ktor.Jsoup,
   Libs.Ktor.Client.OkHttp,
