@@ -168,15 +168,15 @@ plugins:
 
 ------
 
-### 版本自动更新机器人（[Dockfile 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-docker-container-action)）
+### 版本自动更新机器人（[DockFile 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-docker-container-action)）
 
-使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#版本自动更新机器人组合运行步骤草案) 的所有操作
+使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)) 的所有操作
 
 ------
 
 ### 版本自动更新机器人（[JavaScript 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-javascript-action)）
 
-使用 JS 语言来完成 [复合 Action](#版本自动更新机器人组合运行步骤草案) 的所有操作
+使用 JS 语言来完成 [复合 Action](#版本自动更新机器人（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)) 的所有操作
 
 ------
 
