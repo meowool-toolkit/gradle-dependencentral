@@ -7,7 +7,7 @@
 - 以下代码展示了一个 `yml` 配置文件的示例：
 
 ```yaml
-refereces:
+references:
   kotlin: 1.5.31
   androidx-compose: 1.0.1
 
@@ -76,16 +76,16 @@ plugins:
 >
 > ```yaml
 > libraries:
->   limitVersions: 1
->   com.a:b:
->     # 覆盖父层级的 `limitVersions: 1`
->     limitVersions: 5
+>     limitVersions: 1
+>     com.a:b:
+>        # 覆盖父层级的 `limitVersions: 1`
+>        limitVersions: 5
 >     
 > plugins:
->   rejectAll: true
->   com.a:b:
->     # 覆盖父层级的 `rejectAll: true`
->     rejectAll: false
+>     rejectAll: true
+>     com.a:b:
+>        # 覆盖父层级的 `rejectAll: true`
+>        rejectAll: false
 > ```
 
 ------

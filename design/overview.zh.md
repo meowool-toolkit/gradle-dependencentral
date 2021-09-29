@@ -37,7 +37,7 @@
 完整示例：
 
 ```yaml
-refereces:
+references:
   kotlin: 1.5.31
 
 
