@@ -70,7 +70,7 @@ plugins:
 | `rejectSuffixes` | 拒绝检查给定后缀（忽略大小写）的版本              | 字符串数组 | `rejectSuffix: [-RC, -M]` （排除版本后缀为 RC 和 M 的结果，例如 1.2.0-rc, 1.0-M） | 无      |
 | `rejectKeywords` | 拒绝检查包含给定关键字（忽略大小写）的版本        | 字符串数组 | `rejectKeyword: [test]` （排除版本中包含 test 的结果，例如 0.5-TEST-SNAPSHOT） | 无      |
 | `limitVersons`   | 限制检测到的新版本的数量                          | Int        | `limitVersions: 3`（只保留最新的三个版本）                   | `10`    |
-| ...              | 未指定的属性，表示一个嵌套的[依赖对象](#依赖对象) | 复合对象   | `dependency:`<br />   `...`<br />   `...`                    | 无      |
+| ...              | 未指定的属性，表示一个嵌套的[依赖对象](#依赖对象) | 复合对象   | `dependency:`<br />`  ...`<br />`  ...`                      | 无      |
 
 > 注意：所有特定属性都可以被[依赖对象](#依赖对象)继承
 >
@@ -170,13 +170,13 @@ plugins:
 
 ### 版本自动更新机器人（[DockFile 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-docker-container-action)）
 
-使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)) 的所有操作
+使用 [Docker + Kotlin](https://github.com/DRSchlaubi/docker-kotlin) 来完成 [复合 Action](#版本自动更新机器人（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)）) 的所有操作
 
 ------
 
 ### 版本自动更新机器人（[JavaScript 草案](https://docs.github.com/cn/actions/creating-actions/creating-a-javascript-action)）
 
-使用 JS 语言来完成 [复合 Action](#版本自动更新机器人（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)) 的所有操作
+使用 JS 语言来完成 [复合 Action](#版本自动更新机器人（[组合运行步骤草案](https://docs.github.com/cn/actions/creating-actions/creating-a-composite-run-steps-action)）) 的所有操作
 
 ------
 
