@@ -77,7 +77,7 @@ libraries:
 
 plugins:
   com.github.ben-manes.versions:
-    version:
+    versions:
       - 0.21
       - 0.36
       - 0.38
@@ -87,7 +87,7 @@ plugins:
 
 这些数据会在首次 Gradle 运行或手动执行**版本刷新任务** `./gradlew checkVersions ` 时自动生成或补充。
 
-指的注意的是，如果 `libraries` 或 `plugins` 中出现了尚未在 `settings.gradle.kts / build.gradle.kts` 中声明的依赖，则需要通过 [格式化器](mapping.zh.md#格式化) 来自动生成 Java 映射成员，这与 [version catalogs](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) 的行为一致。
+值得注意的是，如果 `libraries` 或 `plugins` 中出现了尚未在 `settings.gradle.kts / build.gradle.kts` 中声明的依赖，则需要通过 [格式化器](mapping.zh.md#格式化) 来自动生成 Java 映射成员，这与 [version catalogs](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) 的行为一致。
 
 > [幕后设计细节](version.zh.md)
 
