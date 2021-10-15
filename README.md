@@ -1,6 +1,6 @@
 [简体中文] | [English](README.en.md)
 
-# Gradle Dependency Central
+# [WIP] Gradle Dependency Central
 
 一个优雅的 Gradle 依赖管理插件，也是 [version catalogs](https://docs.gradle.org/current/userguide/platforms.html#sub:central-declaration-of-dependencies) 与 [refreshVersions](https://github.com/jmfayard/refreshVersions/) 的替代品。
 
