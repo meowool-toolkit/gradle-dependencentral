@@ -18,24 +18,24 @@ libraries:
 
   org.apache.commons:commons-lang3:
     rejectAll: true
-    version: 3.12.0
+    versions: 3.12.0
     
   org.jetbrains.kotlin:kotlin-stdlib:
-    version: ${kotlin}
+    versions: ${kotlin}
     
   org.jetbrains.kotlin:kotlin-reflect:
     rejectMilestone: false
-    version: 
+    versions: 
       ${kotlin}
       1.6.0-M1
     
   androidx.compose.ui:ui:
-    version: ${androidx}
+    versions: ${androidx}
 
 plugins:
   com.github.ben-manes.versions:
-    versionLimit: 3
-    version:
+    limitVersons: 3
+    versions:
       0.21
       0.35
       0.36
